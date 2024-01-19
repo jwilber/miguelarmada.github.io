@@ -84,7 +84,9 @@
     display: block;
     position: relative;
     animation: profile__animate 8s ease-in-out infinite 1s;
-    
+    border: 5px solid hsla(196, 61%, 58%, .5); /* Blue border */
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%; /* Initial border-radius */
+    box-sizing: border-box; /* Include border in the element's total width and height */
   }
 
   @keyframes profile__animate {
@@ -100,7 +102,6 @@
         border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
     }
   }
-
   
   @media (max-width: 1250px) {
     main {
