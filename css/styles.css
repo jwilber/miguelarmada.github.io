@@ -58,7 +58,7 @@ marker::before {
   left: -2px;
   bottom: -1px;
   z-index: -1;
-  transform: rotate(-2deg);
+  transform: rotate(-1.2deg);
   animation: highlightAnimation 2s ease-in-out forwards;
 }
 
