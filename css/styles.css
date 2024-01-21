@@ -1,3 +1,7 @@
+:root {
+  --bg-width: 600px;
+}
+
 .icon-links {
   display: flex;
 }
@@ -17,7 +21,7 @@ p {
   text-align: justify;
   text-justify: inter-character;
   margin: auto;
-  max-width: 600px;
+  max-width: var(--bg-width);
   font-size: 18px;
   line-height: 1.6;
   font-family: "Roboto";
@@ -26,7 +30,7 @@ p {
 h1 {
   text-align: left;
   font-size: 2.5rem;
-  max-width: 600px;
+  max-width: var(--bg-width);
   font-weight: 900;
   font-family: "Roboto";
 }
@@ -49,12 +53,22 @@ marker::before {
 
   content: "";
   position: absolute;
-  width: calc(100% + 4px);
+  width: 0;
   height: 40%;
   left: -2px;
   bottom: -1px;
   z-index: -1;
   transform: rotate(-2deg);
+  animation: highlightAnimation 2s ease-in-out forwards;
+}
+
+@keyframes highlightAnimation {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: calc(100% + 4px);
+  }
 }
 
 li {
@@ -143,12 +157,12 @@ a {
   position: relative;
 }
 
-a:hover::before {
+.link:hover::before {
   bottom: 0;
   height: 100%;
 }
 
-a::before {
+.link::before {
   content: '';
   background-color: hsla(196, 61%, 58%, .50);
   position: absolute;
@@ -158,6 +172,16 @@ a::before {
   height: 4px;
   z-index: -1;
   transition: all .3s ease-in-out;
+  animation: highlightAnimation_link 2s ease-in-out forwards;
+}
+
+@keyframes highlightAnimation_link {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
 }
 
 #intro {
