@@ -124,6 +124,22 @@ b {
   }
 }
 
+.wave {
+  animation-name: wave-animation;
+  animation-iteration-count: 1;  
+  animation-duration: 2s;        
+  transform-origin: 70% 70%;
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+    0% { transform: rotate( 0.0deg) }
+   20% { transform: rotate(14.0deg) }  
+   40% { transform: rotate(-4.0deg) }
+   60% { transform: rotate(10.0deg) }
+   80% { transform: rotate( 0.0deg) } 
+}
+
 @media (max-width: 1250px) {
   main {
     max-width: none;
