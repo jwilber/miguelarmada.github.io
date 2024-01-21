@@ -31,6 +31,32 @@ h1 {
   font-family: "Roboto";
 }
 
+marker {
+  font-family: "Roboto";
+  /* font-weight: bold; */
+  padding-top: 1.3rem;
+  margin-bottom: 0.5rem;
+  padding-bottom: 0;
+  font-size: relative;
+  text-align: left;
+  position: relative;
+  /* text-decoration: underline; */
+}
+
+marker::before {
+  /* Highlight color */
+  background-color: hsla(196, 61%, 58%, .30);
+
+  content: "";
+  position: absolute;
+  width: calc(100% + 4px);
+  height: 40%;
+  left: -2px;
+  bottom: -1px;
+  z-index: -1;
+  transform: rotate(-2deg);
+}
+
 li {
   text-align: justify;
   text-justify: inter-character;
@@ -124,7 +150,7 @@ a:hover::before {
 
 a::before {
   content: '';
-  background-color: hsla(196, 61%, 58%, .75);
+  background-color: hsla(196, 61%, 58%, .50);
   position: absolute;
   left: 0;
   bottom: 2px;
@@ -183,7 +209,7 @@ h1 {
 }
 
 .image-grid {
-  max-width: 580px;
+  max-width: 570px;
   /* Set maximum width for the grid */
   margin: 0 auto;
   /* Center the grid horizontally */
