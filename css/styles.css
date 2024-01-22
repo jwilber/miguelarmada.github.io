@@ -226,6 +226,12 @@ h1 {
   font-family: "Roboto";
 }
 
+.skills{
+  font-size: 15px;
+  text-align: center;
+  font-style: italic;
+}
+
 .bold {
   font-weight: 900;
   font-family: "Roboto";
