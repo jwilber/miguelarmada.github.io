@@ -125,7 +125,7 @@ b {
 }
 
 .wave {
-  font-size: calc(100% + 10px);
+  font-size: calc(100% + 5px);
   animation-name: wave-animation;
   animation-iteration-count: 1;  
   animation-duration: 2s;        
