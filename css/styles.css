@@ -38,6 +38,7 @@ h1 {
 marker {
   font-family: "Roboto";
   /* font-weight: bold; */
+  white-space: nowrap;
   padding-top: 1.3rem;
   margin-bottom: 0.5rem;
   padding-bottom: 0;
@@ -50,7 +51,6 @@ marker {
 marker::before {
   /* Highlight color */
   background-color: hsla(196, 61%, 58%, .30);
-
   content: "";
   position: absolute;
   width: 0;
@@ -245,17 +245,6 @@ h1 {
   filter: invert(81%) sepia(53%) saturate(369%) hue-rotate(62deg) brightness(104%) contrast(101%);
 }
 
-/* mobile */
-@media (max-width: 740px) {
-  p {
-    font-size: 1.1rem;
-  }
-
-  #intro {
-    column-gap: 3rem;
-  }
-}
-
 .image-grid {
   max-width: 570px;
   /* Set maximum width for the grid */
@@ -266,6 +255,13 @@ h1 {
   gap: 30px;
   justify-content: center;
   /* Align grid to the center */
+}
+
+/* mobile */
+@media screen and (max-width: 530px) {
+  .image-grid{
+    grid-template-columns: 1fr;
+  }
 }
 
 .image-container {
