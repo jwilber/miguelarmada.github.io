@@ -24,7 +24,7 @@ p {
   max-width: var(--bg-width);
   font-size: 18px;
   line-height: 1.6;
-  font-family: "Roboto";
+  font-family: "JetBrains Mono";
 }
 
 h1 {
@@ -32,11 +32,11 @@ h1 {
   font-size: 2.5rem;
   max-width: var(--bg-width);
   font-weight: 900;
-  font-family: "Roboto";
+  font-family: "JetBrains Mono";
 }
 
 marker {
-  font-family: "Roboto";
+  font-family: "JetBrains Mono";
   /* font-weight: bold; */
   white-space: nowrap;
   padding-top: 1.3rem;
@@ -78,7 +78,7 @@ li {
   max-width: 600px;
   font-size: 15px;
   line-height: 1.6;
-  font-family: "Roboto";
+  font-family: "JetBrains Mono";
 }
 
 li::marker {
@@ -89,7 +89,7 @@ li::marker {
 }
 
 b {
-  font-family: "Roboto";
+  font-family: "JetBrains Mono";
   font-weight: bold;
   padding-top: 1.3rem;
   margin-bottom: 0.5rem;
@@ -169,7 +169,7 @@ b {
 }
 
 a {
-  font-family: "Roboto";
+  font-family: "JetBrains Mono";
   color: black;
   text-decoration: none;
   position: relative;
@@ -223,7 +223,7 @@ h1 {
   font-size: 1.6rem;
   max-width: 600px;
   font-weight: 900;
-  font-family: "Roboto";
+  font-family: "JetBrains Mono";
 }
 
 .skills{
@@ -234,7 +234,7 @@ h1 {
 
 .bold {
   font-weight: 900;
-  font-family: "Roboto";
+  font-family: "JetBrains Mono";
 }
 
 .strike-through {
